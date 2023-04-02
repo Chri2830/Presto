@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: whitesmoke;
+}
+
+h1, h2, h3, h4, h5, h6 {
+      font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover{
+      color: inherit;
+      cursor: pointer;
+}
+
+:root {
+      --main:#E86174;                                                                                                                                                                                                                                
+      --black: #212529;
+}
+
+.nav-link:hover {
+      color: var(--main);
+      font-weight: 500;
+}                                                                                                                                                                                                                                                                                                                                                     
+
+.btn-main 
+{     background-color: var(--main);
+      border: solid 1px var(--black);
+      font-size: smaller;
+      font-weight: 500;
+      text-transform: uppercase;
+      border-radius: 15px;
+      transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+
+.btn-main:hover {
+      background-color: var(--black);
+      color: white;
+      transform: scale(0.9);
+      cursor: pointer;
+}
+
+.btn-outline {
+      border: solid 1px var(--black);
+      border-radius: 15px;
+      font-size: smaller;
+      font-weight: 500;
+      text-transform: uppercase;
+      transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+
+.btn-outline:hover {
+      border: solid 1px var(--main);
+      color: var(--main);
+      transform: scale(0.9);
+      cursor: pointer;
+}
+
+.bg-main {
+      background-color: var(--main);
+}
+
+.c-black {
+      color: var(--black);
+}
+.c-main {
+      color: var(--main);
+}
+
+.header-carousel {
+      height: 100%;
+  }
+  
+  .btn-carousel,
+  .btn-carousel:focus {
+      background-color: var(--main);
+      color: var(--black);
+      transition: all 0.5s;
+      width: 50px;
+      height: 50px;
+      border-radius: 35%;
+  }
+  
+  .btn-carousel:hover {
+      background-color: var(--black);
+      color: white;
+  }
+
+  
+  .btn-google
+  {     background-color: #EA4335;
+        color: whitesmoke;
+        border: #EA4335 1px solid;
+        font-size: smaller;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 15px;
+        transition: 0.5s;
+  }
+  
+  .btn-google:hover {
+        background-color: whitesmoke;
+        color: var(--black);
+        border: solid 1px var(--black);
+        transform: scale(0.9);
+        cursor: pointer;
+  }
+
+  .btn-git
+  {     background-color: var(--black);
+        color: whitesmoke;
+        font-size: smaller;
+        font-weight: 500;
+        text-transform: uppercase;
+        border-radius: 15px;
+        transition: 0.5s;
+  }
+  
+  .btn-git:hover {
+      background-color: whitesmoke;
+      color: var(--black);
+      border: solid 1px var(--black);
+        transform: scale(0.9);
+        cursor: pointer;
+  }
+  
+  .header-carousel-next {
+      position: absolute;
+      right: 6%;
+      transform: translate(50%, -50%);
+      top: calc(50% + -40px);
+      
+      z-index: 998;
+  }
+  
+  .header-carousel-prev {
+      position: absolute;
+      right: 6%;
+      transform: translate(50%, 50%);
+      top: calc(50% - 25px);
+      
+      z-index: 998;
+  }
+
+  @media (max-width: 768px) {
+      .header-carousel-prev {
+            right: 10%;
+      }
+
+      .header-carousel-next {
+            right: 10%;
+      }
+      .btn-carousel,
+      .btn-carousel:focus {
+      background-color: var(--main);
+      color: var(--black);
+      transition: all 0.5s;
+      width: 35px;
+      height: 35px;
+      border-radius: 35%;
+      }
+  }
+  
+  .box-ann {
+      transition: all 1s cubic-bezier(.215, .61, .355, 1);
+      border-radius: 10px;
+  }
+
+  .box-ann:hover {
+      transform: scale(0.9);
+      filter: blur(5);
+  }
+
+#card{
+      transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+
+#card:hover{
+     transform: scale(1.1); 
+}
+
+
+  .img-bio {
+      border-radius: 100px;
+      transition: 0.5s  ;
+  }
+
+  .img-bio:hover {
+      transform: scale(1.1);
+  }
+
+  hr {
+      border: var(--black) solid 1px;
+      width: 60%;
+      margin: auto;
+      margin-bottom: 30px;
+      margin-top: 30px;
+
+  }
+
+  .bio {
+      background-color: white;
+      border: solid #212529 0.5px;
+      border-radius: 15px;
+      height: 95px;
+  }
+
+ .staff {
+      padding: 0px;
+      overflow: hidden;
+}
+
+.img-staff {
+      transition: all 0.3s ease-in-out;
+      height: 25rem;
+      width: 25rem;
+}
+
+.title-staff {
+      margin-top: 250px;
+      position: absolute;                                                                                                                                                                                                                                                                                                                                                          
+      color: white;
+      z-index: 10;
+      filter: opacity(0);
+      transition: all 0.3s ease-in-out;
+}
+
+.subtitle-staff {
+      margin-top: 300px;
+      position: absolute;
+      color: white;
+      z-index: 10;
+      filter: opacity(0);
+      transition: all 0.3s ease-in-out;
+}
+
+.staff:hover .img-staff {
+      transform: scale(1.1);
+      filter: brightness(0.7);
+      filter: blur(5);
+}
+
+.staff:hover .title-staff, .staff:hover .subtitle-staff {
+      filter: opacity(1);
+      text-shadow: 2px 2px black;
+}
+
+
+/* cursor custom */
+
+*{cursor:none;}
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid var(--main);
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index: 9999;
+}
+
+.cursor2 {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: black ;
+  opacity: 0.6;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+  z-index:9999;
+}
+a:hover {
+  border: px solid red;
+  opacity: 1;
+  z-index: 9999;
+}
+
+@media (max-width: 768px) {
+  .cursor,
+  .cursor2{display:block;}
+}
+
+
+.fade{
+     transition: all 1s cubic-bezier(.215, .61, .355, 1) !important;
+}
+
+/* Profile section */
+
+ .img-bio {
+      border-radius: 100px;
+      transition: all 1s cubic-bezier(.215, .61, .355, 1);
+  }
+
+  .img-bio:hover {
+      transform: scale(1.1);
+  }
+
+  /* #profile-image-input{
+      color: transparent;
+  } */
+
+  hr {
+      border: var(--black) solid 1px;
+      width: 60%;
+      margin: auto;
+      margin-bottom: 30px;
+      margin-top: 30px;
+
+  }
+
+
+/* preview section*/
+
+.img-preview{
+      height: 100%;
+      width: 100%;
+}
+
+.border-main{
+      border-color: var(--main) !important;
+}
+ /* helper */
+ .custom-dropdown-menu {
+    min-width: 50px; /* larghezza minima del menu */
+      /* larghezza massima del menu */
+    padding: 0.5rem; /* spazio interno al menu */
+  }
